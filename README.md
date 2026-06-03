@@ -61,11 +61,29 @@ The project is structured across four analytical components:
 ---
 
 ## Tools & Technologies
+Raw Data → Python → SQL → Power BI → Business Insights
 
-- Python (Pandas, NumPy, Matplotlib, Plotly)  
-- Power BI (dashboard visualization)  
-- Excel (data structuring and validation)
+1. Raw datasets are collected from publicly available sources including USGS, UN Comtrade, and country risk indicators.
 
+2. Python is used to:
+   - Load and clean datasets
+   - Standardize country names and units
+   - Reshape data into analysis-ready formats
+   - Calculate production shares and risk metrics
+
+3. SQL is used to:
+   - Store cleaned datasets in a structured database
+   - Query production, trade, and risk data
+   - Perform ranking, aggregation, and filtering analyses
+   - Create reusable analytical tables for reporting
+
+4. Power BI is used to:
+   - Visualize production concentration
+   - Map trade dependencies
+   - Compare risk profiles across minerals
+   - Present findings through interactive dashboards
+
+5. Final insights are documented in GitHub and summarized through executive-style reporting.
 ---
 
 ---
