@@ -48,19 +48,19 @@ Measure global lithium production by country and year to assess market concentra
 
 ## Selected Source
 
-TBD
+USGS Mineral Commodity Summaries 2024 – Lithium Data Release
 
 ## Source URL
 
-TBD
+[USGS Data Catalog (Lithium Data Release)](https://data.usgs.gov/datacatalog/data/USGS%3A65b7d7ffd34e36a39045b4e8?)
 
 ## Download Date
 
-TBD
+2026-04-21
 
-## File Name
+## Intended File Name
 
-TBD
+lithium_production_raw.csv
 
 ## Storage Location
 
@@ -68,19 +68,21 @@ data/raw/
 
 ## Cleaning Status
 
-Not Started
+Pending
 
 ## SQL Integration Status
 
-Not Started
+Pending
 
 ## Power BI Integration Status
 
-Not Started
+Pending
 
 ## Notes
 
-TBD
+Official USGS world lithium production data.
+Will be used for production concentration analysis,
+market share calculations, and HHI modeling.
 
 ---
 
