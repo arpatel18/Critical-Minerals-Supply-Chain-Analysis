@@ -2,118 +2,316 @@
 
 ## Executive Summary
 
-Global supply chains for critical minerals are increasingly concentrated and geopolitically exposed, creating structural risks for industries reliant on electrification and energy transition technologies.
+Global supply chains for critical minerals are increasingly concentrated and geopolitically exposed, creating structural risks for industries reliant on electrification, renewable energy, and advanced manufacturing technologies.
 
-This project analyzes four key minerals—lithium, cobalt, nickel, and copper—to identify supply concentration risks, trade dependencies, and geopolitical vulnerabilities. The objective is to develop a structured, data-driven view of supply chain resilience and provide insights relevant to strategic sourcing and long-term resource planning.
+This project analyzes four critical minerals—Lithium, Cobalt, Nickel, and Copper—to identify supply concentration risks, trade dependencies, and geopolitical vulnerabilities. The objective is to develop a structured, data-driven framework for evaluating supply chain resilience and identifying strategic sourcing opportunities.
 
----
-
-## Problem Statement
-
-As global demand for electric vehicles, renewable energy, and infrastructure expands, the supply of critical minerals has become a key constraint. Many of these supply chains are:
-
-- Highly concentrated in a small number of countries  
-- Dependent on geopolitically sensitive regions  
-- Vulnerable to policy changes, trade restrictions, and operational disruptions  
-
-Understanding these risks is essential for governments, manufacturers, and investors operating in the energy transition ecosystem.
+The project combines Python, SQL, and Power BI to transform raw production and trade data into actionable business insights.
 
 ---
 
-## Project Scope
+## Business Problem
 
-This analysis focuses on four critical minerals:
+As global demand for electric vehicles, renewable energy systems, battery storage, and infrastructure continues to accelerate, access to critical minerals has become a strategic priority for governments, manufacturers, and investors.
 
-- Lithium  
-- Cobalt  
-- Nickel  
-- Copper  
+Many mineral supply chains exhibit:
 
-These were selected to represent different types of supply chain risk:
+- Geographic concentration in a limited number of countries
+- Exposure to geopolitical instability
+- Vulnerability to trade restrictions and export controls
+- Dependence on single-source suppliers
 
-- **Lithium** → Rapid demand growth  
-- **Cobalt** → Extreme geographic concentration  
-- **Nickel** → Policy-driven supply constraints  
-- **Copper** → System-wide infrastructure dependency  
+Understanding these risks is critical for long-term supply chain planning and resource security.
 
 ---
 
-## Methodology
+## Project Objectives
 
-The project is structured across four analytical components:
+This project aims to answer the following questions:
 
-### 1. Supply Concentration Analysis
-- Evaluate global production by country  
-- Calculate concentration metrics (e.g., HHI)
+### Supply Concentration
 
-### 2. Trade Dependency Mapping
-- Analyze import/export relationships  
-- Identify reliance on key supplier countries  
+- Which countries dominate global production?
+- How concentrated is supply for each mineral?
+- Which minerals face the highest concentration risk?
 
-### 3. Geopolitical Risk Integration
-- Incorporate country-level risk indicators  
-- Assess exposure to instability and disruption  
+### Trade Dependency
 
-### 4. Composite Risk Model
-- Combine concentration, dependency, and geopolitical factors  
-- Rank minerals by overall supply chain risk  
+- Which countries control key trade flows?
+- Where do major import dependencies exist?
+- How vulnerable are downstream markets to supply disruptions?
+
+### Strategic Risk
+
+- Which minerals exhibit the highest overall supply chain risk?
+- How do geopolitical conditions affect supply resilience?
+- Where do diversification opportunities exist?
 
 ---
 
-## Tools & Technologies
+## Minerals Analyzed
+
+The project focuses on four critical minerals selected to represent different supply chain challenges.
+
+### Lithium
+
+Primary battery material supporting electric vehicle adoption and energy storage.
+
+### Cobalt
+
+Highly concentrated supply chain with significant geopolitical and ethical sourcing considerations.
+
+### Nickel
+
+Critical battery and industrial metal with increasing policy-driven supply constraints.
+
+### Copper
+
+Foundational mineral supporting electrification, transmission infrastructure, and renewable energy deployment.
+
+---
+
+## Analytics Pipeline
+
+The project follows a structured end-to-end analytics workflow designed to mirror real-world data analytics and consulting engagements.
+
+### Workflow
+
 Raw Data → Python → SQL → Power BI → Business Insights
 
-1. Raw datasets are collected from publicly available sources including USGS, UN Comtrade, and country risk indicators.
-
-2. Python is used to:
-   - Load and clean datasets
-   - Standardize country names and units
-   - Reshape data into analysis-ready formats
-   - Calculate production shares and risk metrics
-
-3. SQL is used to:
-   - Store cleaned datasets in a structured database
-   - Query production, trade, and risk data
-   - Perform ranking, aggregation, and filtering analyses
-   - Create reusable analytical tables for reporting
-
-4. Power BI is used to:
-   - Visualize production concentration
-   - Map trade dependencies
-   - Compare risk profiles across minerals
-   - Present findings through interactive dashboards
-
-5. Final insights are documented in GitHub and summarized through executive-style reporting.
 ---
+
+## Data Sources
+
+Primary datasets will be collected from publicly available and industry-recognized sources including:
+
+- US Geological Survey (USGS)
+- United Nations Comtrade Database
+- International Energy Agency (IEA)
+- World Bank
+- Natural Resources Canada (NRCan)
+
+---
+
+## Technology Stack
+
+### Python
+
+Python serves as the primary data engineering and analytical tool.
+
+Applications include:
+
+- Data cleaning
+- Data transformation
+- Missing value handling
+- Country name standardization
+- Data validation
+- Feature engineering
+- Risk model development
+
+Libraries:
+
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+- SQLite3
+
+---
+
+### SQL (SQLite)
+
+SQL is used to store and query cleaned datasets within a relational database environment.
+
+Applications include:
+
+- Production ranking
+- Market share calculations
+- Aggregation analysis
+- Trade dependency analysis
+- Dashboard preparation
+- Executive reporting support
+
+Example business questions:
+
+- Which countries produce the most lithium?
+- What percentage of global supply is controlled by the top producers?
+- Which minerals exhibit the highest concentration risk?
+
+---
+
+### Power BI
+
+Power BI is used to transform analytical outputs into executive-level dashboards.
+
+Applications include:
+
+- Production concentration visualization
+- Mineral risk rankings
+- Country-level supply mapping
+- Trade dependency analysis
+- Executive reporting
+
+---
+
+### GitHub
+
+GitHub serves as the project's documentation, version control, and portfolio platform.
+
+Applications include:
+
+- Version control
+- Project documentation
+- Code management
+- Analytical workflow tracking
+- Portfolio presentation
 
 ---
 
 ## Project Structure
 
+```text
 critical-minerals-supply-chain-analysis
-│
-├── data/ # Raw and cleaned datasets
-├── notebooks/ # Analysis and modeling
-├── visuals/ # Charts and dashboard exports
-├── reports/ # Final insights and summary outputs
-├── README.md
+
+data/
+├── raw/
+├── processed/
+
+notebooks/
+├── 01_data_loading_plan.md
+├── 02_database_design.md
+
+sql/
+├── analysis_queries.sql
+
+visuals/
+
+reports/
+
+README.md
+```
+
+### Raw Data
+
+Stores source datasets exactly as downloaded.
+
+Examples:
+
+- lithium_production_raw.csv
+- cobalt_production_raw.csv
+- nickel_production_raw.csv
+- copper_production_raw.csv
+
+### Processed Data
+
+Stores cleaned and analysis-ready datasets.
+
+Examples:
+
+- lithium_production_clean.csv
+- cobalt_production_clean.csv
+- nickel_production_clean.csv
+- copper_production_clean.csv
+
+### SQL
+
+Stores database design files and analytical queries.
+
+Examples:
+
+- Production rankings
+- Market share calculations
+- HHI calculations
+- Risk scoring queries
+
+---
+
+## Planned Analytical Framework
+
+### Phase 1 — Setup & Framing
+
+- Repository creation
+- Project architecture
+- Workflow design
+
+### Phase 2 — Data Collection & Preparation
+
+- Dataset acquisition
+- Data cleaning
+- Data standardization
+- Database creation
+
+### Phase 3 — Production Concentration Analysis
+
+- Market share calculations
+- Top producer analysis
+- Herfindahl-Hirschman Index (HHI)
+
+### Phase 4 — Trade Dependency & Risk Modeling
+
+- Trade flow analysis
+- Country dependency analysis
+- Risk scoring framework
+
+### Phase 5 — Dashboard Development
+
+- Power BI dashboard creation
+- Visualization development
+- Executive reporting
+
+### Phase 6 — Final Deliverables
+
+- Executive summary
+- GitHub portfolio project
+- Business recommendations
 
 ---
 
 ## Current Status
 
-🚧 Phase 1 — Setup & Framing Complete  
-⬜ Phase 2 — Data Collection & Cleaning  
-⬜ Phase 3 — Core Analysis  
-⬜ Phase 4 — Risk Modeling  
-⬜ Phase 5 — Visualization & Reporting  
+### Completed
+
+✅ Repository architecture established
+
+✅ Data storage structure created
+
+✅ SQL framework established
+
+✅ Database schema documented
+
+✅ Executive summary completed
+
+### In Progress
+
+🚧 Phase 2 — Data Collection & Preparation
+
+### Upcoming
+
+⬜ Lithium dataset ingestion
+
+⬜ Database creation
+
+⬜ Production concentration analysis
+
+⬜ HHI calculation
+
+⬜ Risk model development
+
+⬜ Power BI dashboard development
+
+⬜ Executive reporting
 
 ---
 
 ## Expected Outcomes
 
-- Identification of high-risk supply chains  
-- Quantification of global supply concentration  
-- Mapping of key trade dependencies  
-- A structured framework for evaluating sourcing risk  
+By completion, this project will provide:
 
+- A repeatable supply chain risk assessment framework
+- Production concentration metrics across critical minerals
+- Trade dependency analysis
+- Mineral risk rankings
+- Executive-level dashboards
+- Strategic sourcing insights
+
+---
